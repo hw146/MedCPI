@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+
+# Local environments
+.venv/
+venv/
+
+# Secrets and local overrides
+.env
+
+# Raw data and derived patient artifacts
+data/raw/**
+outputs/**
+
+# External assets that should not be redistributed
+assets/models/**
+assets/umls/**
+assets/rxnorm/**
+
+# Keep documentation placeholders
+!data/README.md
+!data/raw/.gitkeep
+!assets/README.md
+!assets/codebooks/.gitkeep
+!assets/models/.gitkeep
+!assets/rxnorm/.gitkeep
+!assets/umls/.gitkeep
+
+# Keep empty top-level directories
+!outputs/
+!assets/
+!data/
+!outputs/.gitkeep
+!outputs/construct/
+!outputs/construct/shared/
+!outputs/construct/shared/README.md
+!outputs/construct/shared/*/
+!outputs/construct/shared/*/relation_schema.json

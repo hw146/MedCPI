@@ -1,0 +1,39 @@
+{
+  "canonical_relations": [
+    "associated_with",
+    "diagnosed_by",
+    "has_complication",
+    "has_pathophysiology",
+    "has_risk_factor",
+    "has_symptom",
+    "measured_by",
+    "treated_by"
+  ],
+  "dataset": "shared",
+  "decision_source": "llm",
+  "llm_model": "gpt-5",
+  "num_canonical_relations": 8,
+  "num_kept_relations": 17,
+  "relations": [
+    {"canonical_relation": "associated_with", "keep": true, "raw_relation": "associated_with"},
+    {"canonical_relation": "has_symptom", "keep": true, "raw_relation": "has_manifestation"},
+    {"canonical_relation": "measured_by", "keep": true, "raw_relation": "measured_by"},
+    {"canonical_relation": "has_pathophysiology", "keep": true, "raw_relation": "has_pathological_process"},
+    {"canonical_relation": "diagnosed_by", "keep": true, "raw_relation": "has_finding_method"},
+    {"canonical_relation": "associated_with", "keep": true, "raw_relation": "clinically_associated_with"},
+    {"canonical_relation": "treated_by", "keep": true, "raw_relation": "may_be_treated_by"},
+    {"canonical_relation": "measured_by", "keep": true, "raw_relation": "has_measurement_method"},
+    {"canonical_relation": "has_symptom", "keep": true, "raw_relation": "has_defining_characteristic"},
+    {"canonical_relation": "has_complication", "keep": true, "raw_relation": "associated_condition_of"},
+    {"canonical_relation": "has_complication", "keep": true, "raw_relation": "has_associated_condition"},
+    {"canonical_relation": "has_risk_factor", "keep": true, "raw_relation": "has_related_factor"},
+    {"canonical_relation": "has_risk_factor", "keep": true, "raw_relation": "has_risk_factor"},
+    {"canonical_relation": "has_symptom", "keep": true, "raw_relation": "has_sign_or_symptom"},
+    {"canonical_relation": "has_pathophysiology", "keep": true, "raw_relation": "has_physiologic_state"},
+    {"canonical_relation": "diagnosed_by", "keep": true, "raw_relation": "may_be_diagnosed_by"},
+    {"canonical_relation": "has_symptom", "keep": true, "raw_relation": "has_definitional_manifestation"}
+  ],
+  "schema_scope": "task_specific_shared_across_datasets",
+  "shared_across_datasets": true,
+  "task": "cad_onset"
+}
